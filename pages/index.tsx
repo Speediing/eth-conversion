@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import TextField from "../components/TextField";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -15,6 +16,11 @@ const Home: NextPage = () => {
 
       <main className="bg-black h-screen">
         <Header />
+        <div className="flex justify-center">
+          <div className="max-w-2xl mt-6">
+            <TextField />
+          </div>
+        </div>
       </main>
     </div>
   );
