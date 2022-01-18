@@ -3,7 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import TextField from "../components/TextField";
-import styles from "../styles/Home.module.css";
+import { Disclosure } from "@headlessui/react";
+import { ChevronUpIcon } from "@heroicons/react/solid";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,33 @@ const Home: NextPage = () => {
         <div className="flex justify-center">
           <div className="max-w-2xl mt-6">
             <TextField />
+          </div>
+        </div>
+        <div className="w-full px-4 pt-16">
+          <div className="w-full max-w-lg p-2 mx-auto bg-black rounded-2xl">
+            <Disclosure>
+              {({ open }) => (
+                <>
+                  <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-green-900 bg-green-100 rounded-lg hover:bg-green-200 focus:outline-none focus-visible:ring focus-visible:ring-green-500 focus-visible:ring-opacity-75">
+                    <span>Conversions</span>
+                    <ChevronUpIcon
+                      className={`${
+                        open ? "transform rotate-180" : ""
+                      } w-5 h-5 text-green-500`}
+                    />
+                  </Disclosure.Button>
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                    <TextField />
+                    <TextField />
+                    <TextField />
+                    <TextField />
+                    <TextField />
+                    <TextField />
+                    <TextField />
+                  </Disclosure.Panel>
+                </>
+              )}
+            </Disclosure>
           </div>
         </div>
       </main>

@@ -8,7 +8,7 @@ const TextField = () => {
           type="text"
           name="price"
           id="price"
-          className="focus:ring-indigo-500  bg-gray-800 focus:border-indigo-500 block w-full  pr-12 sm:text-sm border-gray-600 rounded-md text-white"
+          className="focus:ring-green-500  bg-gray-800 focus:border-green-500 block w-full  pr-12 sm:text-sm border-gray-600 rounded-md text-white"
           placeholder="0.00"
           aria-describedby="price-currency"
         />
