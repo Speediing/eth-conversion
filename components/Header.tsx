@@ -8,11 +8,13 @@ const Header = () => {
           Eth Conversion Tool
         </h2>
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-          A better way to send money
+          Enter your value below
         </p>
         <p className="mt-4 max-w-2xl text-xl text-gray-300 lg:mx-auto">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-          voluptatum cupiditate veritatis in accusamus quisquam.
+          Ether or ETH is often used in different denominations of its currency,
+          such as Wei for interacting with smart contracts and Gwei for
+          calculating gas prices. Use my Unit Converter to easily convert
+          between them!
         </p>
       </div>
     </div>
