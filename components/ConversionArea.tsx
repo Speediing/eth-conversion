@@ -8,6 +8,7 @@ import { getEthValue } from "../utils/helpers/getEthValue";
 
 export const ConversionArea = () => {
   let [ethState, setEthState] = useReducer(ethConversionReducer, null);
+
   return (
     <>
       <div className="flex justify-center">
@@ -33,15 +34,15 @@ export const ConversionArea = () => {
                     } w-5 h-5 text-green-500`}
                   />
                 </Disclosure.Button>
-                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                  {EthConversions.map((x) => {
+                <Disclosure.Panel className="pt-4 pb-2 text-sm text-gray-500">
+                  {EthConversions.map((unit) => {
                     return (
                       <TextField
-                        key={x.label}
-                        value={getEthValue(ethState, x.multiplier)}
+                        key={unit.label}
+                        value={getEthValue(ethState, unit.multiplier)}
                         handleChange={setEthState}
-                        label={x.label}
-                        multiplier={x.multiplier}
+                        label={unit.label}
+                        multiplier={unit.multiplier}
                       />
                     );
                   })}
