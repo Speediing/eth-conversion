@@ -52,7 +52,6 @@ export const ConversionArea = () => {
           </Disclosure>
         </div>
       </div>
-      ;
     </>
   );
 };
