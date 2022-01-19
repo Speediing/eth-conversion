@@ -37,6 +37,7 @@ export const ConversionArea = () => {
                   {EthConversions.map((x) => {
                     return (
                       <TextField
+                        key={x.label}
                         value={getEthValue(ethState, x.multiplier)}
                         handleChange={setEthState}
                         label={x.label}
