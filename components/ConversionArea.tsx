@@ -21,8 +21,8 @@ export const ConversionArea = () => {
           />
         </div>
       </div>
-      <div className="w-full px-4 pt-7">
-        <div className="w-full max-w-lg p-2 mx-auto bg-black rounded-2xl">
+      <div className="w-full px-4 pt-7 bg-black">
+        <div className="w-full max-w-lg p-2 mx-auto rounded-2xl">
           <Disclosure>
             {({ open }) => (
               <>
